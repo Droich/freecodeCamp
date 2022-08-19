@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Build a Survey Form</title>
+    <meta charset="utf-8">
+    <link href="styles.css" rel="stylesheet"/>
+  </head>
+  <body>
+    <h1 id="title">freeCodeCamp Survey Form</h1>
+    <p id="description">This survey is a project from the (New) Responsive Web Design course</p>
+    <form id="survey-form">
+      <fieldset>
+        <label id="name-label" for="name">NAME
+            <input id="name" type="text" name="name" placeholder="Enter your name" required />
+        </label>
+
+        <label id="email-label" for="email">EMAIL
+            <input id="email" type="email" name="email" placeholder="Enter your email" required/>
+        </label>
+      
+        <label id="number-label" for="number">AGE
+            <input id="number" type="number" name="number" max="120" min="10"placeholder="Enter your age" required/>
+        </label>
+      </fieldset>
+      <fieldset>
+        <label id="dropdown-label" for="genre">
+            <select id="dropdown" name="genre" required>
+            <option>Select current role</option>
+            <option>Male</option>
+            <option>Female </option>
+            <select>
+        </label>
+      </fieldset>
+      <fieldset>
+        <label>Would you use this Survey for illegal stuff?</label>
+        <label>
+            <input name="radiobutton" type="radio" value="Definitely" class="inline"/> Definitely
+        </label>
+        <label>
+            <input name="radiobutton" type="radio" value="Maybe" class="inline"/>Maybe
+        </label>
+        <label>
+            <input name="radiobutton" type="radio" value="Not Sure" class="inline"/>Not sure
+        </label>
+      </fieldset>
+      <fieldset>
+        <label> Which of this stuff you like?
+          <input type="checkbox" name="Coffee" value="Coffee"/> Coffee
+        </label>
+        <label>
+          <input type="checkbox" name="Pizza" value="Pizza"/>Pizza
+        </label>
+        <label>
+          <input type="checkbox" name="3" value="idk"/> idk
+        </label>
+      </fieldset>
+      <fieldset>
+        <label>Write a comment 
+          <textarea name="comments" row="3" cols="30" placeholder="Write whatever you want here..."></textarea>
+        </label>
+      </fieldset>
+      <input type="submit" value="Submit" id="submit" />
+    </form>
+  </body>
+</html>
